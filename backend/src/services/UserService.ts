@@ -11,6 +11,13 @@ class UserService {
       },
     });
   }
+  static async ktEmail(email: any): Promise<any>{
+    return await userRepository.find({
+      where:{
+        email: email,
+      }
+    });
+  }
 
   static async addNewUser(data: any): Promise<any> {
     const { name, email, password} = data;

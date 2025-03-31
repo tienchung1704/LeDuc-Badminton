@@ -12,7 +12,7 @@ const Add = ({url}) => {
         name:"",
         description:"",
         price:"",
-        category:"Cat Trees"
+        category:"Balo"
     })
     const [isTrending, setIsTrending] = useState(false);
 
@@ -37,7 +37,7 @@ const Add = ({url}) => {
                 name:"",
                 description:"",
                 price:"",
-                category:"Cat Trees"
+                category:"Balo"
             })
             setImage(false)
             setIsTrending(false);
@@ -71,12 +71,14 @@ const Add = ({url}) => {
                 <div className="add-category flex-col">
                     <p>Product Category</p>
                     <select className='selectt' onChange={onChangeHandler} name="category">
-                        <option value="Cat Trees">Cat Trees</option>
-                        <option value="Fall Arrivals">Fall Arrivals</option>
-                        <option value="For Cats">For Cats</option>
-                        <option value="Gift Guide">Gift Guide</option>
-                        <option value="Apparel">Apparel</option>
-                        <option value="Print Your Pet">Print Your Pet</option>
+                        <option value="Balo">Balo</option>
+                        <option value="Chặn mồ hôi">Chặn mồ hôi</option>
+                        <option value="Cước">Cước</option>
+                        <option value="Kéo">Kéo</option>
+                        <option value="Quấn cán">Quấn cán</option>
+                        <option value="Tất">Tất</option>
+                        <option value="Vợt">Vợt</option>
+
                     </select>
                 </div>
                 <div className="add-price flex-col">
@@ -85,7 +87,7 @@ const Add = ({url}) => {
                 </div>
                 <div className='isTrendingbtn'>
                     <input type="checkbox" name='isTrending' checked={isTrending} onChange={() => setIsTrending(!isTrending)} />
-                    <span htmlFor="isTrending">Trending</span>
+                    <span htmlFor="isTrending">Nổi bật</span>
                 </div>
             </div>
             <button type='submit' className='add-btn' >Add</button>

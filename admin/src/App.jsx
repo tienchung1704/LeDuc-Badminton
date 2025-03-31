@@ -10,6 +10,7 @@ import Postadd from './pages/AddPost/Postadd'
 import Contact from './pages/Contact/Contact'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import EditProduct from './pages/EditProduct/EditProduct.jsx'
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/posts" element={<Posts url={url}/>}/>
           <Route path="/addpost" element={<Postadd url={url}/>}/>
           <Route path="/contact" element={<Contact url={url}/>}/>
+          <Route path="/edit/:id" element={<EditProduct url={url}/>}/>
 
         </Routes>
       </div>

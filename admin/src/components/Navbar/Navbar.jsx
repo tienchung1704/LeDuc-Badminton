@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar">
-        <img className="logo" src={assets.logo} alt="" />
+        <h2>Le Anh Duc</h2>
         <div className="toggle-switch">
           <label
             htmlFor="visual-toggle"
