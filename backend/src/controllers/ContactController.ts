@@ -18,6 +18,7 @@ class ContactController{
         const emailContact = req.body.emailContact;
         const phoneContact = req.body.phoneContact;
         const detailContact = req.body.detailContact;
+        console.log("123",req.body)
         try{
             await ContactService.addContact({ firstnameContact,lastnameContact,emailContact,phoneContact,detailContact });
             res.json({ success: true, message: "Send Success" });
